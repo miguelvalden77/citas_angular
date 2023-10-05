@@ -1,0 +1,19 @@
+<form>
+    <div>
+        <label>Nombre</label>
+        <input type="text" name="nombre" [(ngModel)]="nombre">
+    </div>
+    <div>
+        <label>Fecha</label>
+        <input type="date" name="fecha" [(ngModel)]="fecha">
+    </div>
+    <div>
+        <label>Hora</label>
+        <input type="time" name="hora" [(ngModel)]="hora">
+    </div>
+    <div>
+        <label>Síntomas</label>
+        <textarea name="sintomas" cols="30" rows="10" [(ngModel)]="sintomas"></textarea>
+    </div>
+    <button (click)="createCita()">Crear cita</button>
+</form>

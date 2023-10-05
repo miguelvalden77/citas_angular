@@ -1,0 +1,7 @@
+<section *ngFor="let cita of listadoCitas">
+    <h3>{{cita.nombre}}</h3>
+    <p>{{cita.fecha}}</p>
+    <p>{{cita.hora}}</p>
+    <p>{{cita.sintomas}}</p>
+    <button (click)="giveCitaRemove(cita)">Eliminar cita</button>
+</section>
